@@ -1,6 +1,7 @@
 import getProduct from '@/actions/get-product'
 import getProducts from '@/actions/get-products'
 import Gallery from '@/components/Gallery'
+import Info from '@/components/Info'
 import ProductList from '@/components/ProductList'
 import Container from '@/components/ui/Container'
 
@@ -25,8 +26,7 @@ const ProductPage: React.FC<ProductPageProps> = async ({ params }) => {
               <Gallery images={product.images} />
             </div>
             <div className="mt-10 px-4 sm:mt-16 sm:px-0 lg:mt-0">
-              {/* Info */}
-              Info
+              <Info data={product} />
             </div>
           </div>
           <hr className="my-10" />
