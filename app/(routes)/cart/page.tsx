@@ -1,6 +1,7 @@
 'use client'
 
 import CartItem from '@/app/(routes)/cart/components/CartItem'
+import Summary from '@/app/(routes)/cart/components/Summary'
 import Container from '@/components/ui/Container'
 import useCart from '@/hooks/use-cart'
 import { useEffect, useState } from 'react'
@@ -31,6 +32,7 @@ const CartPage = () => {
                 ))}
               </ul>
             </div>
+            <Summary />
           </div>
         </div>
       </Container>
